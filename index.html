@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
-  <link ref="stylesheet" src="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -11,16 +11,17 @@
 
   <div class="controls">
     <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px"> <!--spacing bar that can be moved to resize the image-->
 
     <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px"> <!--bar that can be moved to blur the image-->
 
     <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#ffc600">
+    <input id="base" type="color" name="base" value="#a81bd3"> <!--bar that opens up the colour picking tool that's the default in the browser-->
   </div>
 
   <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
+  
 </body>
 </html>

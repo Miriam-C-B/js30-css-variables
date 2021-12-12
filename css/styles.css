@@ -1,20 +1,39 @@
 /*
-      misc styles, nothing to do with CSS variables
-    */
+    css variables we can use to change in JS
+*/
+:root { /*level on which we declare the variables. Root means the entire file. The values here are the base values.*/
+    --base: #a81bd3;
+    --spacing: 10px;
+    --blur: 0px;
+}
 
-    body {
-        text-align: center;
-        background: #193549;
-        color: white;
-        font-family: 'helvetica neue', sans-serif;
-        font-weight: 100;
-        font-size: 50px;
-      }
+img {
+    background: var(--base); /*This means that the background is based on the variable base; if you change the value for base, the background changes with it */
+    padding: var(--spacing); /*padding is based on the variable spacing */
+    filter: blur(var(--blur));
+}
+
+.hl {
+    color: var(--base);
+}
+
+/*
+      misc styles, nothing to do with CSS variables
+*/
+
+body {
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
   
-      .controls {
-        margin-bottom: 50px;
-      }
+.controls {
+    margin-bottom: 50px;
+}
   
-      input {
-        width: 100px;
-      }
+input {
+    width: 100px;
+}
